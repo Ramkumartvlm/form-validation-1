@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js document validation</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+      <div class="overply">
+      <form  onsubmit="validateForm(); event.preventDefault();" >
+        <h1>Contact us</h1>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name:">
+        <small class="error">  </small>
+          
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email">
+        <small class="error">  </small>
+        
+        <label for="text">Message</label>
+        <textarea id="Message" placeholder="Your Message"></textarea>
+        <small class="error">  </small>
+        
+
+        <div id="center">
+            <input type="submit"
+            value="send message">
+        </div>
+        <br>
+        <p id="success">  </p>
+
+
+      </form>
+
+
+      </div>
+      <script src="INDEX.JS"></script>
+
+
+
+
+    
+    
+</body>
+</html>
